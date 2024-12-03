@@ -1,0 +1,92 @@
+#puzzle {
+      width: 300px;
+      height: 300px;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+    }
+
+    #puzzle div {
+      width: 100px;
+      height: 100px;
+      float: left;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      background-size: cover;
+    }
+
+    /* Estilos para el texto */
+    #text-container {
+      text-align: center;
+      width: 100%;
+      top: 0;
+    }
+
+    #text-container2 {
+      text-align: center;
+      width: 100%;
+      top: 1%;
+    }
+
+    #text {
+      font-weight: bold;
+      font-size: 24px;
+      opacity: 0;
+      animation: fade-in 3s forwards;
+    }
+
+    #text2 {
+      font-weight: italic;
+      font-size: 8px;
+      opacity: 0;
+      animation: fade-in 3.5s forwards;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Estilos para los botones */
+    .button {
+      position: fixed;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #musicButton {
+      bottom: 60px;
+      right: 20px;
+      background-color: green;
+      color: white;
+    }
+
+    #musicButton:hover {
+      background-color: darkblue;
+    }
+
+    #nextPageButton {
+      bottom: 20px;
+      right: 20px;
+      background-color: darkblue;
+      color: white;
+    }
+
+    #nextPageButton:hover {
+      background-color: green;
+    }
+     body {
+      height: 100vh;
+      overflow: hidden;
+      background-image: url("reverso.png"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
